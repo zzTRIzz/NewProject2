@@ -4,17 +4,40 @@
  */
 package duannhom;
 
+import java.util.Scanner;
+
 /**
  *
  * @author ADMIN
  */
 public class main {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        // TODO code application logic here
-        System.out.println("Chao");
+    public static void main(String[] args) {
+        menu();
+    }
+    public static void menu() {
+        int chon;
+        Scanner sc = new Scanner(System.in);
+        QLSV so1 = new QLSV();
+        do {            
+            System.out.println("------------Menu-------------");
+            System.out.println("1. Nhap thong tin sinh vien ");
+            System.out.println("2. Xuat thong tin sinh vien");
+            System.out.println("3. Tim kiem theo lop");
+            System.out.println("4. Xoa sinh vien bang id");
+            System.out.println("0. Thoat");
+            System.out.println("----------------------------------");
+            chon = sc.nextInt();
+            
+            switch (chon) {
+                case 1:
+                    so1.nhapDS();
+                    break;
+                case 0:
+                    System.exit(0);
+                    break;
+               
+            }
+        } while (chon!=0);
     }
 }
