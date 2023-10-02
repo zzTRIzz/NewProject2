@@ -51,5 +51,9 @@ public class SinhVien {
         return "SinhVien{" + "maSV=" + maSV + ", tenSV=" + tenSV + ", tuoi=" + tuoi + '}';
     }
     
+    public void inThongTin(){
+        System.out.println("SinhVien{" + "maSV=" + maSV + ", tenSV=" + tenSV + ", tuoi=" + tuoi + '}');
+    }
+    
     
 }
