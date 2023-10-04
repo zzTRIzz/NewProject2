@@ -37,6 +37,9 @@ public class main {
                 case 2:
                     so1.xuatDS();
                     break;
+                case 3:
+                    so1.timKiem();
+                    break;
                 case 0:
                     System.exit(0);
                     break;
