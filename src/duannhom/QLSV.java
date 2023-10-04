@@ -27,4 +27,10 @@ public class QLSV {
         
         
     }
+    
+    public void xuatDS(){
+        for (SinhVien sinhVien : listSV) {
+            sinhVien.inThongTin();
+        }
+    }
 }

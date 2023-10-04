@@ -15,11 +15,12 @@ public class main {
     public static void main(String[] args) {
         menu();
     }
+
     public static void menu() {
         int chon;
         Scanner sc = new Scanner(System.in);
         QLSV so1 = new QLSV();
-        do {            
+        do {
             System.out.println("------------Menu-------------");
             System.out.println("1. Nhap thong tin sinh vien ");
             System.out.println("2. Xuat thong tin sinh vien");
@@ -28,16 +29,19 @@ public class main {
             System.out.println("0. Thoat");
             System.out.println("----------------------------------");
             chon = sc.nextInt();
-            
+
             switch (chon) {
                 case 1:
                     so1.nhapDS();
                     break;
+                case 2:
+                    so1.xuatDS();
+                    break;
                 case 0:
                     System.exit(0);
                     break;
-               
+
             }
-        } while (chon!=0);
+        } while (chon != 0);
     }
 }
