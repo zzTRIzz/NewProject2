@@ -35,4 +35,15 @@ public class QLSV {
             sinhVien.inThongTin();
         }
     }
+
+    public void timKiem(){
+        System.out.println("Nhap ten:");
+        String searchLop = sc.nextLine();
+        for (SinhVien sinhVien : listSV) {
+            if (sinhVien.getTenSV().equals(searchLop)) {
+                sinhVien.inThongTin();
+            }
+        }
+        
+    }
 }

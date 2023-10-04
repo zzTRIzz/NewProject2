@@ -25,6 +25,8 @@ public class main {
             System.out.println("1. Nhap thong tin sinh vien ");
             System.out.println("2. Xuat thong tin sinh vien");
             System.out.println("3. Tim kiem theo lop");
+            System.out.println("3. Tim kiem theo lop");
+            System.out.println("3. Tim kiem theo lop");
             System.out.println("4. Xoa sinh vien bang id");
             System.out.println("4. Xoa sinh vien bang id");
             System.out.println("4. Xoa sinh vien bang id");
@@ -38,6 +40,9 @@ public class main {
                     break;
                 case 2:
                     so1.xuatDS();
+                    break;
+                case 3:
+                    so1.timKiem();
                     break;
                 case 0:
                     System.exit(0);
