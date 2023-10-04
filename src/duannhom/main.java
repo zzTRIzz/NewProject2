@@ -26,6 +26,7 @@ public class main {
             System.out.println("2. Xuat thong tin sinh vien");
             System.out.println("3. Tim kiem theo lop");
             System.out.println("4. Xoa sinh vien bang id");
+            System.out.println("4. Xoa sinh vien bang id");
             System.out.println("0. Thoat");
             System.out.println("----------------------------------");
             chon = sc.nextInt();
