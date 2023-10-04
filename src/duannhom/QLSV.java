@@ -21,8 +21,10 @@ public class QLSV {
         sv.setMaSV(sc.nextLine());
         System.out.println("Xin mo nhap ten: ");
         sv.setTenSV(sc.nextLine());
+         System.out.println("Xin moi nhap tuoi: ");
         System.out.println("Xin moi nhap tuoi: ");
         sv.setTuoi(Integer.parseInt(sc.nextLine()));
+
         listSV.add(sv);
         
         
