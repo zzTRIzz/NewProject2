@@ -24,6 +24,7 @@ public class main {
             System.out.println("------------Menu-------------");
             System.out.println("1. Nhap thong tin sinh vien ");
             System.out.println("1. Nhap thong tin sinh vien ");
+            System.out.println("1. Nhap thong tin sinh vien ");
             System.out.println("2. Xuat thong tin sinh vien");
             System.out.println("3. Tim kiem theo lop");
             System.out.println("3. Tim kiem theo lop");
