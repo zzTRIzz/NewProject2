@@ -4,6 +4,9 @@
  */
 package Java_Xuong;
 
+import java.util.ArrayList;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author ZznamnhizZ
@@ -22,10 +25,25 @@ public class ChucNangBanHangView extends javax.swing.JFrame {
     /**
      * Creates new form ChucNangBanHangView
      */
+    
+      DefaultTableModel defaultTableModel;
+    QuanLyHoaDon quanLyHoaDon = new QuanLyHoaDon();
     public ChucNangBanHangView() {
         initComponents();
+//        loadData(list);
     }
-
+    
+    void loadData(ArrayList<HoaDon> list) {
+        defaultTableModel = (DefaultTableModel) tbTaoHoaDon.getModel();
+        defaultTableModel.setRowCount(0);
+        for (HoaDon hoaDon : list) {
+            defaultTableModel.addRow(new Object[]{
+                hoaDon.getMaHD(),
+                hoaDon.getNgayTao(),
+                hoaDon.getTenNV()
+            });
+        }
+        }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -293,8 +311,8 @@ public class ChucNangBanHangView extends javax.swing.JFrame {
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)))
