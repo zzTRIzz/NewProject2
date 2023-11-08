@@ -2,10 +2,6 @@ package DuAnAgile;
 
 
 
-/**
- *
- * @author Ngo Nhan
- */
 public class HocSinh {
     private String maHS;
     private String tenHS;
