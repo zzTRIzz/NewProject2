@@ -1,4 +1,4 @@
-package DuAnAgile;
+
 
 
 public class QuanLyDiemView extends javax.swing.JFrame {
@@ -53,7 +53,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-<<<<<<<< HEAD:src/Agiel/QuanLyDiemView.java
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
 
@@ -69,11 +68,9 @@ public class QuanLyDiemView extends javax.swing.JFrame {
             }
         ));
         jScrollPane2.setViewportView(jTable2);
-========
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
->>>>>>>> 8a5e55d762d6a54e5f5b89e4e1456f6471418d86:src/DuAnAgile/QuanLyDiemView.java
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -142,7 +139,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-<<<<<<<< HEAD:src/Agiel/QuanLyDiemView.java
         jButton10.setText("Thêm");
 
         jButton11.setText("Sửa");
@@ -159,7 +155,7 @@ public class QuanLyDiemView extends javax.swing.JFrame {
         jButton14.setText("Đọc File");
 
         jButton15.setText("Ghi File");
-========
+
         jButton10.setText("Add");
 
         jButton11.setText("Delete");
@@ -171,7 +167,7 @@ public class QuanLyDiemView extends javax.swing.JFrame {
         jButton1.setText("Search");
 
         jButton14.setText("Đọc file");
->>>>>>>> 8a5e55d762d6a54e5f5b89e4e1456f6471418d86:src/DuAnAgile/QuanLyDiemView.java
+
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -180,14 +176,12 @@ public class QuanLyDiemView extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-<<<<<<<< HEAD:src/Agiel/QuanLyDiemView.java
                     .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-========
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -196,7 +190,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
->>>>>>>> 8a5e55d762d6a54e5f5b89e4e1456f6471418d86:src/DuAnAgile/QuanLyDiemView.java
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -214,7 +207,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
                 .addComponent(jButton13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton14)
-<<<<<<<< HEAD:src/Agiel/QuanLyDiemView.java
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton15)
                 .addContainerGap(18, Short.MAX_VALUE))
@@ -238,7 +230,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
             }
         ));
         jScrollPane3.setViewportView(jTable3);
-========
                 .addContainerGap())
         );
 
@@ -247,7 +238,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
         jLabel9.setText("Điểm văn:");
 
         jLabel10.setText("Điểm anh:");
->>>>>>>> 8a5e55d762d6a54e5f5b89e4e1456f6471418d86:src/DuAnAgile/QuanLyDiemView.java
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -257,7 +247,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-<<<<<<<< HEAD:src/Agiel/QuanLyDiemView.java
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -312,7 +301,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
-========
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -365,12 +353,10 @@ public class QuanLyDiemView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane1)
                 .addContainerGap())
->>>>>>>> 8a5e55d762d6a54e5f5b89e4e1456f6471418d86:src/DuAnAgile/QuanLyDiemView.java
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-<<<<<<<< HEAD:src/Agiel/QuanLyDiemView.java
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -418,7 +404,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(81, Short.MAX_VALUE))
-========
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -464,7 +449,6 @@ public class QuanLyDiemView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(12, Short.MAX_VALUE))
->>>>>>>> 8a5e55d762d6a54e5f5b89e4e1456f6471418d86:src/DuAnAgile/QuanLyDiemView.java
         );
 
         pack();
@@ -538,14 +522,11 @@ public class QuanLyDiemView extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
-<<<<<<<< HEAD:src/Agiel/QuanLyDiemView.java
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
-========
->>>>>>>> 8a5e55d762d6a54e5f5b89e4e1456f6471418d86:src/DuAnAgile/QuanLyDiemView.java
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
