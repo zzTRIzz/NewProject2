@@ -295,47 +295,45 @@ public class NhanVienView extends javax.swing.JFrame {
 
     private void btnSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSaveMouseClicked
         // TODO add your handling code here:
-       
-         ArrayList<NhanVien> list = quanLyNhanVien.getListNhanVien();
-         String maCheck = txtMa.getText();
+
+        ArrayList<NhanVien> list = quanLyNhanVien.getListNhanVien();
+        String maCheck = txtMa.getText();
         for (NhanVien nhanVien1 : list) {
-            if(nhanVien1.getMaNhanVien().equals(maCheck)){
+            if (nhanVien1.getMaNhanVien().equals(maCheck)) {
                 JOptionPane.showMessageDialog(this, "Khong duoc de trung ma");
                 return;
             }
         }
 
-        
         String hoTen = txtHoTen.getText();
         Integer tuoi = Integer.parseInt(txtTuoi.getText());
         String email = txtEmail.getText();
         Float luong = Float.parseFloat(txtLuong.getText());
 
         NhanVien nhanVien = new NhanVien(maCheck, hoTen, tuoi, email, luong);
-               
-        if(maCheck.isEmpty()){
+
+        if (maCheck.isEmpty()) {
             JOptionPane.showMessageDialog(this, "Không được để trống mã");
-        }else if(tuoi < 16 || tuoi > 55 ){
+        } else if (tuoi < 16 || tuoi > 55) {
             JOptionPane.showMessageDialog(this, "Tuôi phải từ 16 - 55");
-        }else if(luong < 5000000 ){
+        } else if (luong < 5000000) {
             JOptionPane.showMessageDialog(this, "Lương phải lớn hơn 5 củ");
-        }else{
+        } else {
             Boolean checkAdd = quanLyNhanVien.them(nhanVien);
-        if (checkAdd) {
-            JOptionPane.showMessageDialog(this, "Them thanh cong");
-            loadData(quanLyNhanVien.getListNhanVien());
+            if (checkAdd) {
+                JOptionPane.showMessageDialog(this, "Them thanh cong");
+                loadData(quanLyNhanVien.getListNhanVien());
+            }
+
         }
-       
-        }        
-                
-        
-        
+
+
     }//GEN-LAST:event_btnSaveMouseClicked
 
     private void btnNewMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewMouseClicked
         // TODO add your handling code here:
         int i = tblNhanVien.getSelectedRow();
-         String ma = "";
+        String ma = "";
         txtMa.setText(ma);
         String hoTen = "";
         txtHoTen.setText(hoTen);
@@ -348,7 +346,7 @@ public class NhanVienView extends javax.swing.JFrame {
         String luong = "";
         txtLuong.setText(luong);
 
-       
+
     }//GEN-LAST:event_btnNewMouseClicked
 
     private void btnFindMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFindMouseClicked
@@ -358,48 +356,46 @@ public class NhanVienView extends javax.swing.JFrame {
         ArrayList<NhanVien> ketQua = quanLyNhanVien.timKiem(maTim);
         if (!ketQua.isEmpty()) {
             loadData(ketQua);
-        
 
-            
         } else {
-           JOptionPane.showMessageDialog(this, "Khong tim thay nhan vien");
-           return;
+            JOptionPane.showMessageDialog(this, "Khong tim thay nhan vien");
+            return;
         }
 
-    
+
     }//GEN-LAST:event_btnFindMouseClicked
 
     private void btnDeleteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteMouseClicked
         // TODO add your handling code here:
-      
+
         String id = txtMa.getText();
         Boolean check = quanLyNhanVien.delete(id);
-        if(check && !id.isEmpty()){
+        if (check && !id.isEmpty()) {
             JOptionPane.showMessageDialog(this, "Xoa thanh cong");
             loadData(quanLyNhanVien.getListNhanVien());
-        }else{
+        } else {
             JOptionPane.showMessageDialog(this, "Khong duoc de trong");
             return;
         }
-        
-       
-         
+
+
     }//GEN-LAST:event_btnDeleteMouseClicked
-   void ghiFile() throws IOException{
-       File file = new File("asm.txt");
-        if(!file.exists()){
+
+    void ghiFile() throws IOException {
+        File file = new File("asm.txt");
+        if (!file.exists()) {
             file.createNewFile();
         }
         FileOutputStream fos = new FileOutputStream(file);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         ArrayList<NhanVien> list = quanLyNhanVien.getListNhanVien();
         for (NhanVien nhanVien : list) {
-           oos.writeObject(nhanVien);
-       }
+            oos.writeObject(nhanVien);
+        }
         oos.close();
         fos.close();
-        
-   }
+
+    }
     private void btnExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMouseClicked
         try {
             // TODO add your handling code here:
@@ -409,23 +405,23 @@ public class NhanVienView extends javax.swing.JFrame {
         }
         System.exit(0);
     }//GEN-LAST:event_btnExitMouseClicked
-    void docFile() throws FileNotFoundException, IOException, ClassNotFoundException{
+    void docFile() throws FileNotFoundException, IOException, ClassNotFoundException {
         File file = new File("asm.txt");
-        if(!file.exists()){
+        if (!file.exists()) {
             System.out.println("Khong tim thay file");
             return;
-            
+
         }
         FileInputStream fis = new FileInputStream(file);
-        ObjectInputStream ois = new ObjectInputStream(fis); 
+        ObjectInputStream ois = new ObjectInputStream(fis);
         ArrayList<NhanVien> list = new ArrayList<>();
-        while(fis.available()>0){
+        while (fis.available() > 0) {
             list.add((NhanVien) ois.readObject());
         }
         ois.close();
         fis.close();
         loadData(list);
-        
+
     }
     private void btnOpenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOpenMouseClicked
         try {
@@ -446,10 +442,10 @@ public class NhanVienView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnVeDauMouseClicked
 
-/**
- * @param args the command line arguments
- */
-public static void main(String args[]) {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -461,27 +457,23 @@ public static void main(String args[]) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
 
-}
+                }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NhanVienView.class  
+            java.util.logging.Logger.getLogger(NhanVienView.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
-.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(NhanVienView.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
-} catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NhanVienView.class  
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(NhanVienView.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
-.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-
-} catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NhanVienView.class  
-
-.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-
-} catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NhanVienView.class  
-
-.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(NhanVienView.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
