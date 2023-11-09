@@ -1,7 +1,10 @@
 
 package DuAnAgile1;
 
-
+/**
+ *
+ * @author ZznamnhizZ
+ */
 public class QuanLyDiemView extends javax.swing.JFrame {
 
     /**
